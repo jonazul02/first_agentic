@@ -33,6 +33,25 @@ Crear un flujo controlado para evolucionar codigo con:
 - `src/first_agentic/orchestration/`: motor de estados
 - `tests/unit/`: pruebas unitarias
 
+## Tooling base
+
+- `Poetry` como gestor principal de dependencias
+- `requirements.txt` y `requirements-dev.txt` para compatibilidad con flujos `pip`
+
+### Instalacion con Poetry
+
+```bash
+poetry install
+poetry run pytest -q
+```
+
+### Instalacion con pip
+
+```bash
+python3 -m pip install -r requirements-dev.txt
+python3 -m pytest -q
+```
+
 ## Trabajo por ramas
 
 Todo cambio se hace en ramas `feature/*` antes de integrarse a `main`.
