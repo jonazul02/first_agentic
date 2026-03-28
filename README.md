@@ -31,6 +31,7 @@ Crear un flujo controlado para evolucionar codigo con:
 - `docs/`: decisiones y protocolo
 - `src/first_agentic/agents/`: agentes orquestador, coder y reviewer
 - `src/first_agentic/core/`: tareas dummy y runner de demostracion
+- `src/first_agentic/repo/`: adaptador de repo sandbox y politicas
 - `src/first_agentic/domain/`: modelos y enums base
 - `src/first_agentic/orchestration/`: motor de estados
 - `tests/unit/`: pruebas unitarias
@@ -39,6 +40,12 @@ Crear un flujo controlado para evolucionar codigo con:
 
 ```bash
 poetry run python -m first_agentic.core.demo_runner
+```
+
+## Demo Etapa 3
+
+```bash
+poetry run python -m first_agentic.core.sandbox_runner
 ```
 
 ## Tooling base
