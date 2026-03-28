@@ -29,9 +29,17 @@ Crear un flujo controlado para evolucionar codigo con:
 ## Estructura actual
 
 - `docs/`: decisiones y protocolo
+- `src/first_agentic/agents/`: agentes orquestador, coder y reviewer
+- `src/first_agentic/core/`: tareas dummy y runner de demostracion
 - `src/first_agentic/domain/`: modelos y enums base
 - `src/first_agentic/orchestration/`: motor de estados
 - `tests/unit/`: pruebas unitarias
+
+## Demo Etapa 2
+
+```bash
+PYTHONPATH=src python3 -m first_agentic.core.demo_runner
+```
 
 ## Tooling base
 
