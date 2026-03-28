@@ -1,12 +1,21 @@
-[build-system]
-requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "first-agentic"
 version = "0.1.0"
 description = "Evolutive 3-agent orchestration skeleton"
-requires-python = ">=3.10"
+authors = ["MI20741 <mi20741@example.com>"]
+readme = "README.md"
+packages = [{ include = "first_agentic", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pydantic = "^2.12.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
