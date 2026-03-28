@@ -1,2 +1,38 @@
 # first_agentic
-Este repositorio es un ejercicio para crear un flujo agentico para programar y hacer evoluciones más rápidas sobre código
+
+Sistema agentico evolutivo con 3 roles principales:
+
+- Orchestrator
+- Coder
+- Reviewer
+
+Este proyecto se construye por etapas, empezando por un esqueleto minimo y robusteciendolo de forma incremental.
+
+## Objetivo
+
+Crear un flujo controlado para evolucionar codigo con:
+
+- Roles bien definidos
+- Permisos por alcance
+- Estados de tarea claros
+- Revision automatizada
+- Aprobacion humana obligatoria
+
+## Etapas
+
+1. Protocolo (entradas, salidas, permisos, estados)
+2. Tareas falsas para validar flujo
+3. Integracion con repo sandbox
+4. Revision automatizada
+5. Aprobacion humana
+
+## Estructura actual
+
+- `docs/`: decisiones y protocolo
+- `src/first_agentic/domain/`: modelos y enums base
+- `src/first_agentic/orchestration/`: motor de estados
+- `tests/unit/`: pruebas unitarias
+
+## Trabajo por ramas
+
+Todo cambio se hace en ramas `feature/*` antes de integrarse a `main`.
