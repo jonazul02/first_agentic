@@ -1,0 +1,5 @@
+python3 -m pip install --user poetry ##instala poetry
+poetry config virtualenvs.in-project true ### le dice crear venv dentro del proyecto
+poetry install# 3) instalar dependencias en .venv local
+poetry env info --path #información
+poetry run python -m first_agentic.core.script_para_ejecutar # ejecuta el main.py o el run.py
